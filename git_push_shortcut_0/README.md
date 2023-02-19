@@ -1,34 +1,55 @@
-Open gpush file
+# Make permanant shortcut
 
-copy the script (exclude the 1st line)
+##### 1- Open gpush file
 
-open terminal
+##### 2- Copy the script (exclude the 1st line)
 
-go to /root directory by running cd command
+```
+read -p "commit message: " m
+git add .
+git commit -m "$m"
+git push
 
-run ls -a command
+```
 
-find .bashrc file
+##### 3- Open terminal
 
-open file in editor (vi .bashrc)
+##### 4- Go to /root directory
 
-go to the end of the file
+by running cd command
 
-add a function (ex gpush)
+```
+cd
+```
+##### 5- Open .bashrc file in editor (ex: vi)
 
-paste the script inside the function
+```
+vi .bashrc
+```
+##### 6- Go to the end of the file
 
+##### 7- Add a function (we will name it gpush)
+
+##### 8- Paste the script inside the function
+
+```
 gpush()
 {
 	#script
 }
+```
+##### 9- Save and exit file (:wq)
 
-save and exit file (:wq)
+##### 10- Restart terminal
 
-restart terminal (or run source .bashrc)
-
+or run 
+```
+source .bashrc
+```
 New command syntax:
 
 open repo directory and run 
 
+```
 gpush
+```
